@@ -1,0 +1,346 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: url("hero-bg.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff9900;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #cc7a00;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: calc(33.333% - 20px);
+  max-width: 300px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #333;
+  color: white;
+}
+
+footer h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+footer input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+footer button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+footer button:hover {
+  background-color: #cc7a00;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #aaaaaa;
+}
+
+.trail-img,
+.mountain-img,
+.nature-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.hiking-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+#lets-go h2 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #f6b400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1vh;
+  text-align: center;
+}
+
+#button1,
+#button2 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#button1:hover,
+#button2:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+#promo {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#explore {
+  text-align: center;
+  padding: 40px;
+  background: #f6b400;
+  color: white;
+}
+
+#explore h2 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#upcoming-events {
+  background-color: #1a1a1a;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#upcoming-events h2 {
+  font-size: 2.5em;
+  color: #f39c12;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#upcoming-events .events {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+#upcoming-events .event {
+  background-color: #292929;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#upcoming-events .event:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#upcoming-events .event h3 {
+  font-size: 1.8em;
+  color: #f1c40f;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#upcoming-events .event p {
+  font-size: 1em;
+  color: #dddddd;
+  line-height: 1.6;
+}
+
+.event-details {
+  display: none;
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event.active .event-details {
+  display: block;
+}
+
+/* Медіа-запити для адаптивності */
+@media (max-width: 1200px) {
+  .cards {
+    justify-content: center;
+  }
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 60px 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  footer input[type="email"] {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  footer button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  #lets-go h2 {
+    font-size: 2.5em;
+  }
+
+  .event-card {
+    width: 100%;
+  }
+
+  .promo-block {
+    width: 100%;
+    text-align: center;
+  }
+
+  .promo-block h3 {
+    font-size: 1.5em;
+  }
+
+  .promo-block a,
+  .promo-block button {
+    font-size: 1.5em;
+    padding: 10px 25px;
+  }
+}
